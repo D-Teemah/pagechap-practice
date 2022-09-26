@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000A0F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container{
+    margin: 40px 100px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.side-icon{
+    margin-left: 25px;
+}
+
+.lower-container{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+.left-text{
+    width: 400px;
+}
+h1{
+    font-size:50px;
+    background: linear-gradient(54.1deg, #E6145B 16.87%, #2974E2 101.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+p{
+    color: white;
+}
+.left-text-icons{
+    margin-top: 50px;
+}
+input{
+    background-color: rgb(27, 26, 26);
+    border: none;
+    border-radius: 8px;
+    padding: 15px 40px;
+
+}
+button{
+    color: white;
+    background-color: #E6145B;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 35px;
+    margin-left: 5px;
+}
+.bottom{
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-light:hover{
+    cursor: pointer;
+}
+.bottom-dark{
+    position: absolute;
+    left: 1210px;
+    display: none;
+}
+.hidden{
+   display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+
+
+
+@media (max-width: 480px){
+    .container{
+        margin: 20px 20px;
+        position: relative;
+    }
+    .side-icons{
+        display: none;
+    }
+    .menu-icon{
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 320px;
+    }
+    .Big-image{
+        width: 390px;
+    }
+    .lower-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+
+
+    .mobile-menu{
+        display: block;
+        width: 330px;
+        height: 550px;
+        background-color: #000A0F;
+        position: absolute;
+        top: 0px;
+        left: 55px;
+        visibility: hidden;
+    }
+    .mobile-up{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .side-img{
+        margin-left: 130px;
+    }
+    .side-icon{
+        display: block;
+        align-items: center;
+        margin: 50px 120px;
+
+    }
+    .mobile-down-list p{
+        margin-top: -70px;
+        margin-left: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    .mobile-down h1{
+        padding-top: 50px;
+        font-size: 30px;
+        text-align: center;
+        margin: 0px 90px;
+    }
+    .bottom-light{
+        position: absolute;
+        left: 350px;
+    }
+    .bottom-dark{
+        position: absolute;
+        left: 350px;
+    }
+    .Email-bottom{
+        width: 77%;
+        margin-bottom: 10px;
+    }
+    .Button-bottom{
+        width: 95%;
+    }
+    
+}
